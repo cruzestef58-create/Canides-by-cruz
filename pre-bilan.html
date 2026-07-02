@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pré-bilan & Rendez-vous — Canidés by Cruz</title>
+<link rel="icon" href="assets/images/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js-loading');</script>
+<div class="page-transition" id="pageTransition" aria-hidden="true"><img class="pt-logo" src="assets/images/logo-dog.png" alt=""></div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img class="logo-dog" src="assets/images/logo-dog.png" alt="">
+      <img class="logo-word" src="assets/images/logo-word.png" alt="Canidés by Cruz — éducation canine">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#accueil">Accueil</a></li>
+      <li><a href="index.html#tarifs">Tarifs</a></li>
+      <li><a href="index.html#a-propos">A Propos</a></li>
+      <li><a href="index.html#contact">Contacts</a></li>
+      <li><a href="pre-bilan.html" class="nav-cta">Prendre rendez-vous</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="form-page-hero">
+  <div class="container">
+    <h1>Pré-bilan gratuit</h1>
+    <p>Remplissez ce formulaire pour me donner un premier aperçu de la situation de votre chien. Je vous recontacte rapidement pour organiser un rendez-vous adapté.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <form class="form-wrap" id="prebilanForm">
+      <div class="form-row">
+        <div class="field">
+          <label for="prenom">Votre prénom</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+        <div class="field">
+          <label for="nom">Votre nom</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="chien">Nom du chien</label>
+          <input type="text" id="chien" name="chien">
+        </div>
+        <div class="field">
+          <label for="age">Âge du chien</label>
+          <input type="text" id="age" name="age" placeholder="ex : 8 mois">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="race">Race</label>
+        <input type="text" id="race" name="race">
+      </div>
+
+      <div class="first-rdv-note">
+        🐾 Le premier rendez-vous est toujours un <strong>Bilan comportemental (75€)</strong>, sans exception — c'est l'étape qui me permet de bien comprendre votre chien avant de proposer un suivi adapté.
+      </div>
+
+      <div class="field">
+        <label for="probleme">Décrivez la situation / le comportement à travailler</label>
+        <textarea id="probleme" name="probleme" required placeholder="Depuis quand, dans quel contexte, ce que vous avez déjà essayé..."></textarea>
+      </div>
+
+      <div class="form-note">En envoyant ce formulaire, votre messagerie s'ouvre avec toutes les infos déjà remplies — il ne reste plus qu'à cliquer sur envoyer.</div>
+
+      <button type="submit" class="btn" style="width:100%;">Envoyer ma demande de pré-bilan</button>
+
+      <div class="form-alt">
+        Vous préférez notre ancien formulaire ? <a href="https://form.jotform.com/260202126472041" target="_blank" rel="noopener" style="color:var(--red); font-weight:700; text-decoration:underline;">Ouvrir le formulaire JotForm</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Canidés by Cruz — Tous droits réservés</p>
+    <div class="footer-links">
+      <a href="#">Conditions et assistance</a>
+      <a href="#">Politique de confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
