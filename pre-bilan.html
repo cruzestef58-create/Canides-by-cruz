@@ -42,14 +42,22 @@
 <section style="padding-top:0;">
   <div class="container">
     <form class="form-wrap" id="prebilanForm">
+      <!-- ===== Web3Forms : REMPLACER la valeur ci-dessous par ta clé d'accès gratuite ===== -->
+      <input type="hidden" name="access_key" value="60331209-7880-4566-b384-94daabb50777">
+      <input type="hidden" name="subject" value="Nouvelle demande de pré-bilan — Canidés by Cruz">
+      <input type="hidden" name="from_name" value="Site Canidés by Cruz">
+      <input type="hidden" name="Prestation" value="Bilan comportemental (75€) — premier rendez-vous">
+      <!-- anti-spam (ne pas remplir) -->
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
       <div class="form-row">
         <div class="field">
           <label for="prenom">Votre prénom</label>
-          <input type="text" id="prenom" name="prenom" required>
+          <input type="text" id="prenom" name="Prénom" required>
         </div>
         <div class="field">
           <label for="nom">Votre nom</label>
-          <input type="text" id="nom" name="nom" required>
+          <input type="text" id="nom" name="Nom" required>
         </div>
       </div>
 
@@ -60,24 +68,24 @@
         </div>
         <div class="field">
           <label for="telephone">Téléphone</label>
-          <input type="tel" id="telephone" name="telephone" required>
+          <input type="tel" id="telephone" name="Téléphone" required>
         </div>
       </div>
 
       <div class="form-row">
         <div class="field">
           <label for="chien">Nom du chien</label>
-          <input type="text" id="chien" name="chien">
+          <input type="text" id="chien" name="Nom du chien">
         </div>
         <div class="field">
           <label for="age">Âge du chien</label>
-          <input type="text" id="age" name="age" placeholder="ex : 8 mois">
+          <input type="text" id="age" name="Âge du chien" placeholder="ex : 8 mois">
         </div>
       </div>
 
       <div class="field">
         <label for="race">Race</label>
-        <input type="text" id="race" name="race">
+        <input type="text" id="race" name="Race">
       </div>
 
       <div class="first-rdv-note">
@@ -86,17 +94,23 @@
 
       <div class="field">
         <label for="probleme">Décrivez la situation / le comportement à travailler</label>
-        <textarea id="probleme" name="probleme" required placeholder="Depuis quand, dans quel contexte, ce que vous avez déjà essayé..."></textarea>
+        <textarea id="probleme" name="Situation à travailler" required placeholder="Depuis quand, dans quel contexte, ce que vous avez déjà essayé..."></textarea>
       </div>
 
-      <div class="form-note">En envoyant ce formulaire, votre messagerie s'ouvre avec toutes les infos déjà remplies — il ne reste plus qu'à cliquer sur envoyer.</div>
+      <div class="form-note">Vos informations sont envoyées directement à Esteban, en toute confidentialité.</div>
 
       <button type="submit" class="btn" style="width:100%;">Envoyer ma demande de pré-bilan</button>
 
       <div class="form-alt">
-        Vous préférez notre ancien formulaire ? <a href="https://form.jotform.com/260202126472041" target="_blank" rel="noopener" style="color:var(--red); font-weight:700; text-decoration:underline;">Ouvrir le formulaire JotForm</a>
+        Un souci pour envoyer ? Écrivez-moi directement à <a href="mailto:canidesbycruz@gmail.com" style="color:var(--red); font-weight:700; text-decoration:underline;">canidesbycruz@gmail.com</a>
       </div>
     </form>
+
+    <div class="form-wrap form-success" id="formStatus" style="display:none">
+      <div class="fs-icon">🐾</div>
+      <h3>Merci, votre demande est bien envoyée !</h3>
+      <p>Je reviens vers vous très rapidement pour organiser votre bilan comportemental. À très vite !</p>
+    </div>
   </div>
 </section>
 
