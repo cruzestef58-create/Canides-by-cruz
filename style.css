@@ -369,8 +369,10 @@ footer    { z-index: 4; }
   display: grid;
   grid-template-columns: 380px 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: start;
 }
+/* le texte démarre au niveau du haut de la photo, avec un léger décalage optique */
+.about-text { padding-top: 6px; }
 .about-photo {
   border-radius: 24px;
   overflow: hidden;
